@@ -5,8 +5,12 @@ from PIL import Image
 
 def main():
     """Script to Convert JPEG to PNG"""
+    count = len(sys.argv)
     source = sys.argv[1]
-    destination = sys.argv[2]
+    if count < 3:
+        destination = source.split(".")[0] + ".png"
+    else:
+        destination = sys.argv[2]
     im1 = Image.open(source)
     im1.save(destination)
     return 0
