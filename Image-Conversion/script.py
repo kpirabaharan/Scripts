@@ -1,10 +1,8 @@
 #!/usr/bin/env python
+"""Script to Convert JPEG to PNG"""
 import sys
 import os
 from PIL import Image
-
-
-"""Script to Convert JPEG to PNG"""
 
 
 def normal():
